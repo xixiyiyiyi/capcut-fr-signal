@@ -1,0 +1,81 @@
+{
+  "snapshot_date": "2026-11-15",
+  "window": {
+    "start": "2026-07-28",
+    "end": "2026-11-14"
+  },
+  "dataset": "Apple App Store France, public RSS customer reviews, sortby=mostrecent",
+  "capcut": {
+    "app_id": 1500855883,
+    "app_store_full_rating": 4.62352,
+    "app_store_full_rating_count": 131307,
+    "sample_n": 300,
+    "sample_date_min": "2026-07-28",
+    "sample_date_max": "2026-11-14",
+    "sample_mean_rating": 2.99,
+    "rating_counts": {
+      "1": 103,
+      "2": 25,
+      "3": 35,
+      "4": 47,
+      "5": 90
+    },
+    "keyword_signals": {
+      "payment": 124,
+      "export_quality": 38,
+      "reliability": 34
+    },
+    "keyword_patterns": {
+      "payment": "(payant|payante|payer|abonnement|premium|prix|coûte|coût|factur|rembours|gratuit|euro|€|achat|trop cher|\\bpro\\b)",
+      "export_quality": "(export|exporter|exportation|enregistr|sauveg|sauver|sauvegard|télécharg|qualité|résolution|1080p|4k)",
+      "reliability": "(bug|bogue|plante|plantage|crash|ferme|fermé|fonctionne pas|ne marche pas|inutilisable|erreur|bloqu|lag|ralenti|saccad|freeze|gèle|geler)"
+    }
+  },
+  "comparison": [
+    {
+      "app": "CapCut",
+      "returned_sample_n": 300,
+      "window_sample_n": 300,
+      "window_mean_rating": 2.99,
+      "returned_sample_mean_rating": 2.99,
+      "date_min": "2026-07-28",
+      "date_max": "2026-11-14"
+    },
+    {
+      "app": "InShot",
+      "returned_sample_n": 300,
+      "window_sample_n": 102,
+      "window_mean_rating": 4.39,
+      "returned_sample_mean_rating": 4.33,
+      "date_min": "2025-11-09",
+      "date_max": "2026-11-12"
+    },
+    {
+      "app": "VN",
+      "returned_sample_n": 300,
+      "window_sample_n": 27,
+      "window_mean_rating": 4.67,
+      "returned_sample_mean_rating": 4.43,
+      "date_min": "2021-04-10",
+      "date_max": "2026-11-02"
+    },
+    {
+      "app": "Canva",
+      "returned_sample_n": 300,
+      "window_sample_n": 276,
+      "window_mean_rating": 4.27,
+      "returned_sample_mean_rating": 4.29,
+      "date_min": "2026-07-16",
+      "date_max": "2026-11-13"
+    }
+  ],
+  "sources": {
+    "rss_template": "https://itunes.apple.com/fr/rss/customerreviews/page=1/id={app_id}/sortby=mostrecent/json",
+    "app_store_pages": {
+      "CapCut": "https://apps.apple.com/fr/app/capcut-%C3%A9diteur-vid%C3%A9o-photo/id1500855883?uo=4",
+      "InShot": "https://apps.apple.com/fr/app/inshot-montage-video-photo/id997362197?uo=4",
+      "VN": "https://apps.apple.com/fr/app/vn-%C3%A9diteur-photo-vid%C3%A9o/id1343581380?uo=4",
+      "Canva": "https://apps.apple.com/fr/app/canva-montage-photo-vid%C3%A9o-ia/id897446215?uo=4"
+    }
+  }
+}
